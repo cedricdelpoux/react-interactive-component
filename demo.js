@@ -8752,7 +8752,7 @@ var App = function App() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
     null,
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_Header__["a" /* default */], { title: "React Component Demo" }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_Header__["a" /* default */], { title: "React Interactive Component" }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       Container,
       null,
