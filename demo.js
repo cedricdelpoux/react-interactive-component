@@ -8550,7 +8550,7 @@ var DemoBasic = function DemoBasic() {
     {
       displayName: "ReactSvgLineChart",
       hiddenProps: hiddenProps,
-      tabsColor: __WEBPACK_IMPORTED_MODULE_4__variables_js__["a" /* headerBgColor */]
+      tabsColor: __WEBPACK_IMPORTED_MODULE_4__variables_js__["b" /* mainColor */]
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data, className: "customClass" })
   );
@@ -8580,7 +8580,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* headerBgColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* mainColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
 
 var Link = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject2);
 
@@ -8630,11 +8630,11 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* headerBgColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* mainColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
 
-var Title = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Title = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
 
-var Button = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject3, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Button = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject3, __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
 var CornerLink = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject4);
 
 var githubLink = "https://github.com/xuopled/react-interactive-component";
@@ -8694,7 +8694,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 var Arm = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].path(_templateObject);
 
-var Svg = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].svg(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["a" /* headerBgColor */], Arm);
+var Svg = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].svg(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["b" /* mainColor */], Arm);
 
 var OctocatCorner = function OctocatCorner() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -8746,7 +8746,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 Object(__WEBPACK_IMPORTED_MODULE_3_styled_components__["b" /* injectGlobal */])(_templateObject);
 
-var Container = __WEBPACK_IMPORTED_MODULE_3_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["d" /* small */]);
+var Container = __WEBPACK_IMPORTED_MODULE_3_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["d" /* small */]);
 
 var App = function App() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -8771,17 +8771,17 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return large; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return large; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return medium; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return small; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return headerBgColor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return mainColor; });
 // Mq
 var large = "@media screen and (min-width: 64em)";
 var medium = "@media screen and (min-width: 42em) and (max-width: 64em)";
 var small = "@media screen and (max-width: 42em)";
 
 // Header
-var headerBgColor = "#159957";
+var mainColor = "#159957";
 
 /***/ }),
 
