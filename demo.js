@@ -8542,7 +8542,7 @@ for (var x = 1; x <= 30; x++) {
   data.push({ x: x, y: Math.floor(Math.random() * 100) });
 }
 
-var hiddenProps = ["activePoint", "data", "hoveredPointRadius", "onPointHover"];
+var hiddenProps = ["activePoint", "data", "hoveredPointRadius", "onPointHover", "viewBoxHeight", "viewBoxWidth", "xLabelsStep", "yLabelsWidth", "noYlabel", "noXlabel"];
 
 var DemoBasic = function DemoBasic() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -8552,7 +8552,7 @@ var DemoBasic = function DemoBasic() {
       hiddenProps: hiddenProps,
       tabsColor: __WEBPACK_IMPORTED_MODULE_4__variables_js__["a" /* headerBgColor */]
     },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data, className: "customClass" })
   );
 };
 
@@ -37181,6 +37181,8 @@ var Edit = function Edit(_ref) {
       controlsStyles = _ref.controlsStyles,
       enhancedComponent = _ref.enhancedComponent;
 
+  // eslint-disable-next-line
+  console.log(enhancedComponent);
   var controls = Object.entries(enhancedComponent.props).sort().map(function (_ref2) {
     var name = _ref2[0],
         value = _ref2[1];
