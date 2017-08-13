@@ -8534,7 +8534,7 @@ module.exports = __webpack_require__("../react-svg-line-chart/node_modules/react
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_3__src__["b" /* loadEditorTheme */])("duotone-sea");
+Object(__WEBPACK_IMPORTED_MODULE_3__src__["b" /* loadEditorTheme */])();
 
 var data = [];
 
@@ -8637,7 +8637,7 @@ var Title = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].d
 var Button = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject3, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
 var CornerLink = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject4);
 
-var githubLink = "https://github.com/xuopled/react-component-demo";
+var githubLink = "https://github.com/xuopled/react-interactive-component";
 
 var Header = function Header(_ref) {
   var title = _ref.title;
@@ -8774,35 +8774,11 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return large; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return medium; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return small; });
-/* unused harmony export headingsColor */
-/* unused harmony export bodyTextColor */
-/* unused harmony export bodyLinkColor */
-/* unused harmony export blockquoteTextColor */
-/* unused harmony export codeBgColor */
-/* unused harmony export codeTextColor */
-/* unused harmony export borderColor */
-/* unused harmony export tableBorderColor */
-/* unused harmony export hrBorderColor */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return headerBgColor; });
 // Mq
 var large = "@media screen and (min-width: 64em)";
 var medium = "@media screen and (min-width: 42em) and (max-width: 64em)";
 var small = "@media screen and (max-width: 42em)";
-
-// Text
-var headingsColor = "#0aa370";
-var bodyTextColor = "#606c71";
-var bodyLinkColor = "#1e6bb8";
-var blockquoteTextColor = "#819198";
-
-// Code
-var codeBgColor = "#f3f6fa";
-var codeTextColor = "#567482";
-
-// Borders
-var borderColor = "#dce6f0";
-var tableBorderColor = "#e9ebec";
-var hrBorderColor = "#eff0f1";
 
 // Header
 var headerBgColor = "#159957";
@@ -37739,11 +37715,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var ReactComponentDemo = function (_Component) {
-  _inherits(ReactComponentDemo, _Component);
+var ReactInteractiveComponent = function (_Component) {
+  _inherits(ReactInteractiveComponent, _Component);
 
-  function ReactComponentDemo(props, context) {
-    _classCallCheck(this, ReactComponentDemo);
+  function ReactInteractiveComponent(props, context) {
+    _classCallCheck(this, ReactInteractiveComponent);
 
     var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
 
@@ -37755,7 +37731,7 @@ var ReactComponentDemo = function (_Component) {
     return _this;
   }
 
-  ReactComponentDemo.prototype.handleControlChange = function handleControlChange(name, value, valid) {
+  ReactInteractiveComponent.prototype.handleControlChange = function handleControlChange(name, value, valid) {
     var enhancedProps = this.state.enhancedProps;
 
     if (valid) {
@@ -37765,7 +37741,7 @@ var ReactComponentDemo = function (_Component) {
     }
   };
 
-  ReactComponentDemo.prototype.getOriginalComponent = function getOriginalComponent() {
+  ReactInteractiveComponent.prototype.getOriginalComponent = function getOriginalComponent() {
     var _props = this.props,
         children = _props.children,
         component = _props.component;
@@ -37780,7 +37756,7 @@ var ReactComponentDemo = function (_Component) {
     return null;
   };
 
-  ReactComponentDemo.prototype.renderCustomLayout = function renderCustomLayout() {
+  ReactInteractiveComponent.prototype.renderCustomLayout = function renderCustomLayout() {
     var enhancedProps = this.state.enhancedProps;
     var _props2 = this.props,
         children = _props2.children,
@@ -37790,7 +37766,7 @@ var ReactComponentDemo = function (_Component) {
     return children(enhancedComponent, this.handleControlChange);
   };
 
-  ReactComponentDemo.prototype.renderDefaultLayout = function renderDefaultLayout(originalComponent) {
+  ReactInteractiveComponent.prototype.renderDefaultLayout = function renderDefaultLayout(originalComponent) {
     var enhancedProps = this.state.enhancedProps;
     var _props3 = this.props,
         displayName = _props3.displayName,
@@ -37807,7 +37783,7 @@ var ReactComponentDemo = function (_Component) {
     });
   };
 
-  ReactComponentDemo.prototype.render = function render() {
+  ReactInteractiveComponent.prototype.render = function render() {
     var _props4 = this.props,
         children = _props4.children,
         component = _props4.component;
@@ -37826,10 +37802,10 @@ var ReactComponentDemo = function (_Component) {
     return null;
   };
 
-  return ReactComponentDemo;
+  return ReactInteractiveComponent;
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
 
-ReactComponentDemo.propTypes = {
+ReactInteractiveComponent.propTypes = {
   children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.element, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func]),
   component: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.element,
   displayName: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
@@ -37837,7 +37813,7 @@ ReactComponentDemo.propTypes = {
   tabsColor: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
 };
 
-ReactComponentDemo.defaultProps = {
+ReactInteractiveComponent.defaultProps = {
   displayName: null,
   hiddenProps: [],
   tabsColor: null
@@ -37845,7 +37821,7 @@ ReactComponentDemo.defaultProps = {
 
 
 
-/* harmony default export */ __webpack_exports__["a"] = (ReactComponentDemo);
+/* harmony default export */ __webpack_exports__["a"] = (ReactInteractiveComponent);
 
 /***/ }),
 
