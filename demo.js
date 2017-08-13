@@ -37181,8 +37181,6 @@ var Edit = function Edit(_ref) {
       controlsStyles = _ref.controlsStyles,
       enhancedComponent = _ref.enhancedComponent;
 
-  // eslint-disable-next-line
-  console.log(enhancedComponent);
   var controls = Object.entries(enhancedComponent.props).sort().map(function (_ref2) {
     var name = _ref2[0],
         value = _ref2[1];
