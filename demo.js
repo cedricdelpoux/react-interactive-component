@@ -8555,10 +8555,10 @@ var DemoBasic = function DemoBasic() {
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "pre",
-      null,
+      { className: "language-jsx" },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "code",
-        { className: "language-jsx" },
+        null,
         "\nimport ReactInteractiveComponent, {\n  loadEditorTheme,\n} from \"react-interactive-component\"\n\nimport YourComponent from \"./src/yourComponent\"\n\nloadEditorTheme()\n\nconst Demo = () =>\n  <ReactInteractiveComponent>\n    <YourComponent data={[...]} />\n  </ReactInteractiveComponent>\n        "
       )
     ),
