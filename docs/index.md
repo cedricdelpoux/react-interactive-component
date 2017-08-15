@@ -1,5 +1,7 @@
 # Documentation
 
+![Demo](./assets/demo.gif)
+
 ## Usage
 
 * [Basic](./usages/basic.md)

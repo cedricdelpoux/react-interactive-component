@@ -96,20 +96,21 @@ const CornerLink = styled.a`
   right: 0;
 `
 
-const githubLink = "https://github.com/xuopled/react-interactive-component"
-
 const Header = ({title}) =>
   <Container>
     <Title>
       {title}
     </Title>
-    <Button href={githubLink}>
+    <Button href={variables.githubUrl}>
       {"Github"}
     </Button>
-    <Button href={`${githubLink}/blob/master/docs/index.md`}>
+    <Button href={variables.npmUrl}>
+      {"Npm"}
+    </Button>
+    <Button href={`${variables.githubUrl}/blob/master/docs/index.md`}>
       {"Documentation"}
     </Button>
-    <CornerLink href={githubLink}>
+    <CornerLink href={variables.githubUrl}>
       <OctocatCorner />
     </CornerLink>
   </Container>

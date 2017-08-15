@@ -53,6 +53,8 @@ If you need some customization, checkout [documentation](./docs/index.md)
 
 ## Demo
 
+![Demo](./docs/assets/demo.gif)
+
 See [Demo page][github-page]
 
 ## Todo list

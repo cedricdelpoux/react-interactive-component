@@ -6,3 +6,9 @@ export const small = "@media screen and (max-width: 42em)"
 
 // Header
 export const mainColor = "#159957"
+
+// Urls
+export const githubUrl =
+  "https://github.com/xuopled/react-interactive-component"
+export const npmUrl =
+  "https://www.npmjs.com/package/react-interactive-component"

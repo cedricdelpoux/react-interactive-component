@@ -21,7 +21,8 @@ injectGlobal`
     color: #606c71;
   }
 
-  pre[class*="language-"] {
+  pre[class*="language-"],
+  code[class*="language-"] {
     box-shadow: none;
     border: none;
     border-radius: 0;
