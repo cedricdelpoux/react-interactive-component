@@ -8574,7 +8574,7 @@ var DemoBasic = function DemoBasic() {
         hiddenProps: hiddenProps,
         tabsColor: __WEBPACK_IMPORTED_MODULE_4__variables_js__["c" /* mainColor */]
       },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data, className: "customClass" })
     )
   );
 };
