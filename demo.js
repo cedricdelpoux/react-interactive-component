@@ -8542,20 +8542,42 @@ for (var x = 1; x <= 30; x++) {
   data.push({ x: x, y: Math.floor(Math.random() * 100) });
 }
 
-var hiddenProps = ["activePoint", "data", "hoveredPointRadius", "onPointHover", "viewBoxHeight", "viewBoxWidth", "xLabelsStep", "yLabelsWidth", "noYlabel", "noXlabel"];
+var hiddenProps = ["activePoint", "data", "hoveredPointRadius", "noXlabel", "noYlabel", "onPointHover", "viewBoxHeight", "viewBoxWidth", "xLabelsStep", "yLabelsWidth"];
 
 var DemoBasic = function DemoBasic() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_3__src__["a" /* default */],
-    {
-      displayName: "ReactSvgLineChart",
-      hiddenProps: hiddenProps,
-      tabsColor: __WEBPACK_IMPORTED_MODULE_4__variables_js__["b" /* mainColor */]
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data, className: "customClass" })
+    "div",
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "h2",
+      null,
+      "Code"
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "pre",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "code",
+        { className: "language-jsx" },
+        "\nimport ReactInteractiveComponent, {\n  loadEditorTheme,\n} from \"react-interactive-component\"\n\nimport YourComponent from \"./src/yourComponent\"\n\nloadEditorTheme()\n\nconst Demo = () =>\n  <ReactInteractiveComponent>\n    <YourComponent data={[...]} />\n  </ReactInteractiveComponent>\n        "
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "h2",
+      null,
+      "Result"
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__src__["a" /* default */],
+      {
+        displayName: "ReactSvgLineChart",
+        hiddenProps: hiddenProps,
+        tabsColor: __WEBPACK_IMPORTED_MODULE_4__variables_js__["c" /* mainColor */]
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data })
+    )
   );
 };
-
 /* harmony default export */ __webpack_exports__["a"] = (DemoBasic);
 
 /***/ }),
@@ -8580,7 +8602,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* mainColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* mainColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["f" /* small */]);
 
 var Link = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject2);
 
@@ -8630,14 +8652,12 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* mainColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* mainColor */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["f" /* small */]);
 
-var Title = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Title = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["f" /* small */]);
 
-var Button = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject3, __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* small */]);
+var Button = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject3, __WEBPACK_IMPORTED_MODULE_3__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["d" /* medium */], __WEBPACK_IMPORTED_MODULE_3__variables_js__["f" /* small */]);
 var CornerLink = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject4);
-
-var githubLink = "https://github.com/xuopled/react-interactive-component";
 
 var Header = function Header(_ref) {
   var title = _ref.title;
@@ -8651,17 +8671,22 @@ var Header = function Header(_ref) {
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       Button,
-      { href: githubLink },
+      { href: __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* githubUrl */] },
       "Github"
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       Button,
-      { href: githubLink + "/blob/master/docs/index.md" },
+      { href: __WEBPACK_IMPORTED_MODULE_3__variables_js__["e" /* npmUrl */] },
+      "Npm"
+    ),
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      Button,
+      { href: __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* githubUrl */] + "/blob/master/docs/index.md" },
       "Documentation"
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       CornerLink,
-      { href: githubLink },
+      { href: __WEBPACK_IMPORTED_MODULE_3__variables_js__["a" /* githubUrl */] },
       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__OctocatCorner__["a" /* default */], null)
     )
   );
@@ -8694,7 +8719,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 var Arm = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].path(_templateObject);
 
-var Svg = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].svg(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["b" /* mainColor */], Arm);
+var Svg = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].svg(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["c" /* mainColor */], Arm);
 
 var OctocatCorner = function OctocatCorner() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -8746,7 +8771,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 Object(__WEBPACK_IMPORTED_MODULE_3_styled_components__["b" /* injectGlobal */])(_templateObject);
 
-var Container = __WEBPACK_IMPORTED_MODULE_3_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["a" /* large */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["c" /* medium */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["d" /* small */]);
+var Container = __WEBPACK_IMPORTED_MODULE_3_styled_components__["a" /* default */].div(_templateObject2, __WEBPACK_IMPORTED_MODULE_2__variables_js__["b" /* large */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["d" /* medium */], __WEBPACK_IMPORTED_MODULE_2__variables_js__["f" /* small */]);
 
 var App = function App() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -8771,10 +8796,12 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return large; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return medium; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return small; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return mainColor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return large; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return medium; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return small; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return mainColor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return githubUrl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return npmUrl; });
 // Mq
 var large = "@media screen and (min-width: 64em)";
 var medium = "@media screen and (min-width: 42em) and (max-width: 64em)";
@@ -8782,6 +8809,10 @@ var small = "@media screen and (max-width: 42em)";
 
 // Header
 var mainColor = "#159957";
+
+// Urls
+var githubUrl = "https://github.com/xuopled/react-interactive-component";
+var npmUrl = "https://www.npmjs.com/package/react-interactive-component";
 
 /***/ }),
 
