@@ -14,7 +14,6 @@
   },
   "keywords": ["react", "component", "demo", "interactive", "live"],
   "main": "lib/index.js",
-  "style": "lib/index.css",
   "module": "es/index.js",
   "files": ["es", "lib", "umd"],
   "scripts": {
