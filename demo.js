@@ -24157,7 +24157,6 @@ var routes = [{
   label: "Basic example"
 }, {
   path: "/advanced",
-  exact: true,
   component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_DemoAdvanced__["a" /* default */], null),
   label: "Advanced example"
 }, {
