@@ -23948,7 +23948,7 @@ module.exports = "<h1 id=\"react-interactive-component\">react-interactive-compo
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_3__src__["f" /* loadEditorTheme */])("duotone-sea");
+Object(__WEBPACK_IMPORTED_MODULE_3__src__["f" /* loadEditorTheme */])();
 
 var data = [];
 
@@ -23973,7 +23973,7 @@ var DemoAdvanced = function DemoAdvanced() {
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "code",
         null,
-        "\nimport ReactInteractiveComponent, {\n  Edit,\n  Preview,\n  Tab,\n  Tabs,\n  loadEditorTheme,\n} from \"react-interactive-component\"\n\nimport YourComponent from \"./src/yourComponent\"\n\nloadEditorTheme(\"duotone-sea\")\n\nconst Demo = () =>\n  <ReactInteractiveComponent component={<YourComponent data={[...]} />}>\n    {(enhancedComponent, onChange) =>\n      <div>\n        <Tabs color=\"#2ecc71\">\n          <Tab label=\"Preview\">\n            <Preview\n              displayName=\"ReactSvgLineChart\"\n              hiddenProps={hiddenProps}\n              enhancedComponent={enhancedComponent}\n            />\n          </Tab>\n          <Tab label=\"Edit\">\n            <Edit\n              displayName=\"ReactSvgLineChart\"\n              hiddenProps={hiddenProps}\n              enhancedComponent={enhancedComponent}\n              onChange={onChange}\n            />\n          </Tab>\n        </Tabs>\n        {enhancedComponent}\n      </div>}\n  </ReactInteractiveComponent>\n    "
+        "\nimport ReactInteractiveComponent, {\n  Edit,\n  Preview,\n  Tab,\n  Tabs,\n  loadEditorTheme,\n} from \"react-interactive-component\"\n\nimport YourComponent from \"./src/yourComponent\"\n\nloadEditorTheme()\n\nconst Demo = () =>\n  <ReactInteractiveComponent component={<YourComponent data={[...]} />}>\n    {(enhancedComponent, onChange) =>\n      <div>\n        <Tabs color=\"#2ecc71\">\n          <Tab label=\"Preview\">\n            <Preview\n              displayName=\"ReactSvgLineChart\"\n              hiddenProps={hiddenProps}\n              enhancedComponent={enhancedComponent}\n            />\n          </Tab>\n          <Tab label=\"Edit\">\n            <Edit\n              displayName=\"ReactSvgLineChart\"\n              hiddenProps={hiddenProps}\n              enhancedComponent={enhancedComponent}\n              onChange={onChange}\n            />\n          </Tab>\n        </Tabs>\n        {enhancedComponent}\n      </div>}\n  </ReactInteractiveComponent>\n    "
       )
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
