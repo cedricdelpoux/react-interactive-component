@@ -7,6 +7,11 @@ var extraWebpackConfig = {
         loader: "eslint-loader",
         include: /src/,
       },
+      {
+        test: /\.md$/,
+        loader: "html-loader!markdown-loader",
+        exclude: /node_modules/,
+      },
     ],
   },
 }

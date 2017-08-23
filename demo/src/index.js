@@ -1,61 +1,31 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import * as variables from "./variables.js"
-import styled, {injectGlobal} from "styled-components"
+import ReactDemoPage from "react-demo-page"
 
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import DemoBasic from "./components/DemoBasic"
+import routes from "./routes"
+import pkg from "../../package.json"
 
-injectGlobal`
-  * {
-    box-sizing: border-box;
-  }
+const header = {
+  title: pkg.name,
+  buttons: [
+    {label: "Github", url: pkg.homepage},
+    {label: "Npm", url: `https://www.npmjs.com/package/${pkg.name}`},
+    {label: "Download", url: `${pkg.homepage}/archive/master.zip`},
+  ],
+}
 
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #606c71;
-  }
+const footer = {
+  author: pkg.author,
+}
 
-  pre[class*="language-"],
-  code[class*="language-"] {
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-  }
-`
-
-const Container = styled.div`
-  ${variables.large} {
-    max-width: 64rem;
-    padding: 0 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  ${variables.medium} {
-    padding: 0 4rem;
-    font-size: 1.1rem;
-  }
-
-  ${variables.small} {
-    padding: 0 1rem;
-    font-size: 1rem;
-  }
-`
-
-const App = () =>
-  <div>
-    <Header title="React Interactive Component" />
-    <Container>
-      <DemoBasic />
-    </Container>
-    <Footer />
-  </div>
+const Demo = () =>
+  <ReactDemoPage
+    basename={pkg.name}
+    header={header}
+    footer={footer}
+    pages={routes}
+    color="#2ecc71"
+  />
 
 // eslint-disable-next-line
-ReactDOM.render(<App />, document.querySelector("#demo"))
+ReactDOM.render(<Demo />, document.querySelector("#demo"))

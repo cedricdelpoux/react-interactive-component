@@ -3,7 +3,6 @@ import ReactSvgLineChart from "react-svg-line-chart"
 import "react-svg-line-chart/lib/index.css"
 
 import ReactInteractiveComponent, {loadEditorTheme} from "../../../src"
-import * as variables from "../variables.js"
 
 loadEditorTheme()
 
@@ -55,7 +54,7 @@ const Demo = () =>
     <ReactInteractiveComponent
       displayName="ReactSvgLineChart"
       hiddenProps={hiddenProps}
-      tabsColor={variables.mainColor}
+      tabsColor="#2ecc71"
     >
       <ReactSvgLineChart data={data} className="customClass" />
     </ReactInteractiveComponent>

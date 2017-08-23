@@ -2,7 +2,6 @@ import React from "react"
 import ReactSvgLineChart from "react-svg-line-chart"
 import "react-svg-line-chart/lib/index.css"
 
-import * as variables from "../variables.js"
 import ReactInteractiveComponent, {
   Edit,
   Preview,
@@ -11,7 +10,7 @@ import ReactInteractiveComponent, {
   loadEditorTheme,
 } from "../../../src"
 
-loadEditorTheme("duotone-sea")
+loadEditorTheme()
 
 const data = []
 
@@ -27,15 +26,30 @@ const hiddenProps = [
 ]
 
 const DemoAdvanced = () =>
-  <ReactInteractiveComponent
-    component={<ReactSvgLineChart data={data} />}
-    displayName="ReactSvgLineChart"
-    hiddenProps={hiddenProps}
-    tabsColor="orange"
-  >
+  <div>
+    <h2>
+      {"Code"}
+    </h2>
+    <pre className="language-jsx">
+      <code>
+        {`
+import ReactInteractiveComponent, {
+  Edit,
+  Preview,
+  Tab,
+  Tabs,
+  loadEditorTheme,
+} from "react-interactive-component"
+
+import YourComponent from "./src/yourComponent"
+
+loadEditorTheme()
+
+const Demo = () =>
+  <ReactInteractiveComponent component={<YourComponent data={[...]} />}>
     {(enhancedComponent, onChange) =>
       <div>
-        <Tabs color={variables.mainColor}>
+        <Tabs color="#2ecc71">
           <Tab label="Preview">
             <Preview
               displayName="ReactSvgLineChart"
@@ -55,5 +69,35 @@ const DemoAdvanced = () =>
         {enhancedComponent}
       </div>}
   </ReactInteractiveComponent>
+    `}
+      </code>
+    </pre>
+    <h2>
+      {"Result"}
+    </h2>
+    <ReactInteractiveComponent component={<ReactSvgLineChart data={data} />}>
+      {(enhancedComponent, onChange) =>
+        <div>
+          <Tabs color="#2ecc71">
+            <Tab label="Preview">
+              <Preview
+                displayName="ReactSvgLineChart"
+                hiddenProps={hiddenProps}
+                enhancedComponent={enhancedComponent}
+              />
+            </Tab>
+            <Tab label="Edit">
+              <Edit
+                displayName="ReactSvgLineChart"
+                hiddenProps={hiddenProps}
+                enhancedComponent={enhancedComponent}
+                onChange={onChange}
+              />
+            </Tab>
+          </Tabs>
+          {enhancedComponent}
+        </div>}
+    </ReactInteractiveComponent>
+  </div>
 
 export default DemoAdvanced
