@@ -23931,6 +23931,97 @@ module.exports = "<h1 id=\"react-interactive-component\">react-interactive-compo
 
 /***/ }),
 
+/***/ "./demo/src/components/DemoAdvanced.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/react.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart__ = __webpack_require__("../react-svg-line-chart/lib/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_svg_line_chart_lib_index_css__ = __webpack_require__("../react-svg-line-chart/lib/index.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_svg_line_chart_lib_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_svg_line_chart_lib_index_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src__ = __webpack_require__("./src/index.js");
+
+
+
+
+
+
+Object(__WEBPACK_IMPORTED_MODULE_3__src__["f" /* loadEditorTheme */])("duotone-sea");
+
+var data = [];
+
+for (var x = 1; x <= 30; x++) {
+  data.push({ x: x, y: Math.floor(Math.random() * 100) });
+}
+
+var hiddenProps = ["activePoint", "data", "hoveredPointRadius", "onPointHover"];
+
+var DemoAdvanced = function DemoAdvanced() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "div",
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "h2",
+      null,
+      "Code"
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "pre",
+      { className: "language-jsx" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "code",
+        null,
+        "\nimport ReactInteractiveComponent, {\n  Edit,\n  Preview,\n  Tab,\n  Tabs,\n  loadEditorTheme,\n} from \"react-interactive-component\"\n\nimport YourComponent from \"./src/yourComponent\"\n\nloadEditorTheme(\"duotone-sea\")\n\nconst Demo = () =>\n  <ReactInteractiveComponent component={<YourComponent data={[...]} />}>\n    {(enhancedComponent, onChange) =>\n      <div>\n        <Tabs color=\"#2ecc71\">\n          <Tab label=\"Preview\">\n            <Preview\n              displayName=\"ReactSvgLineChart\"\n              hiddenProps={hiddenProps}\n              enhancedComponent={enhancedComponent}\n            />\n          </Tab>\n          <Tab label=\"Edit\">\n            <Edit\n              displayName=\"ReactSvgLineChart\"\n              hiddenProps={hiddenProps}\n              enhancedComponent={enhancedComponent}\n              onChange={onChange}\n            />\n          </Tab>\n        </Tabs>\n        {enhancedComponent}\n      </div>}\n  </ReactInteractiveComponent>\n    "
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "h2",
+      null,
+      "Result"
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__src__["e" /* default */],
+      { component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart___default.a, { data: data }) },
+      function (enhancedComponent, onChange) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "div",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3__src__["d" /* Tabs */],
+            { color: "#2ecc71" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3__src__["c" /* Tab */],
+              { label: "Preview" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__src__["b" /* Preview */], {
+                displayName: "ReactSvgLineChart",
+                hiddenProps: hiddenProps,
+                enhancedComponent: enhancedComponent
+              })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3__src__["c" /* Tab */],
+              { label: "Edit" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__src__["a" /* Edit */], {
+                displayName: "ReactSvgLineChart",
+                hiddenProps: hiddenProps,
+                enhancedComponent: enhancedComponent,
+                onChange: onChange
+              })
+            )
+          ),
+          enhancedComponent
+        );
+      }
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (DemoAdvanced);
+
+/***/ }),
+
 /***/ "./demo/src/components/DemoBasic.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -23948,7 +24039,7 @@ module.exports = "<h1 id=\"react-interactive-component\">react-interactive-compo
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_3__src__["b" /* loadEditorTheme */])();
+Object(__WEBPACK_IMPORTED_MODULE_3__src__["f" /* loadEditorTheme */])();
 
 var data = [];
 
@@ -23982,7 +24073,7 @@ var DemoBasic = function DemoBasic() {
       "Result"
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_3__src__["a" /* default */],
+      __WEBPACK_IMPORTED_MODULE_3__src__["e" /* default */],
       {
         displayName: "ReactSvgLineChart",
         hiddenProps: hiddenProps,
@@ -24049,8 +24140,10 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart_lib_index_css__ = __webpack_require__("../react-svg-line-chart/lib/index.css");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart_lib_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_svg_line_chart_lib_index_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DemoBasic__ = __webpack_require__("./demo/src/components/DemoBasic.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__README_md__ = __webpack_require__("./README.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__README_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__README_md__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_DemoAdvanced__ = __webpack_require__("./demo/src/components/DemoAdvanced.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__README_md__ = __webpack_require__("./README.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__README_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__README_md__);
+
 
 
 
@@ -24061,11 +24154,16 @@ var routes = [{
   path: "/",
   exact: true,
   component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_DemoBasic__["a" /* default */], null),
-  label: "Demo"
+  label: "Basic example"
 }, {
-  path: "/Readme",
-  html: __WEBPACK_IMPORTED_MODULE_3__README_md___default.a,
-  label: "Readme"
+  path: "/advanced",
+  exact: true,
+  component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_DemoAdvanced__["a" /* default */], null),
+  label: "Advanced example"
+}, {
+  path: "/readme",
+  html: __WEBPACK_IMPORTED_MODULE_4__README_md___default.a,
+  label: "Read me"
 }];
 
 /* harmony default export */ __webpack_exports__["a"] = (routes);
@@ -49365,11 +49463,11 @@ var DEFAULT_TAB_ACTIVE_STYLES = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Tab__ = __webpack_require__("./src/components/Tab/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Tabs__ = __webpack_require__("./src/components/Tabs/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_loadEditorTheme__ = __webpack_require__("./src/utils/loadEditorTheme.js");
-/* unused harmony reexport Edit */
-/* unused harmony reexport Preview */
-/* unused harmony reexport Tab */
-/* unused harmony reexport Tabs */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__utils_loadEditorTheme__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__components_Edit__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_4__components_Preview__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_5__components_Tab__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_6__components_Tabs__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_7__utils_loadEditorTheme__["a"]; });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -49494,7 +49592,7 @@ ReactInteractiveComponent.defaultProps = {
 
 
 
-/* harmony default export */ __webpack_exports__["a"] = (ReactInteractiveComponent);
+/* harmony default export */ __webpack_exports__["e"] = (ReactInteractiveComponent);
 
 /***/ }),
 
