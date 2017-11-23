@@ -1,3 +1,7 @@
+# 0.1.3 - 2017-11-23
+
+* Added: Prepublish script
+
 # 0.1.1 - 2017-11-23
 
 * Updated: Checkbox initialization fix
