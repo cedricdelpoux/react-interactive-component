@@ -1,6 +1,6 @@
 {
   "name": "react-interactive-component",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create interactive live demo for your React Component with ease",
   "author": {
     "name": "Cédric Delpoux",
@@ -36,6 +36,7 @@
     "gh-release": "github-release-from-changelog",
     "lint": "eslint src demo/src",
     "precommit": "lint-staged",
+    "prepublish": "yarn build",
     "start": "nwb serve-react-demo",
     "test": "jest --config jest.config.json --colors --no-cache",
     "test:watch": "npm test -- --watch"
