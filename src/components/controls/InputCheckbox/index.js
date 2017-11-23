@@ -8,7 +8,7 @@ const InputCheckbox = ({className, onChange, style, value}) => {
       onClick={e => onChange(e.target.checked, e.target.validity.valid)}
       style={style}
       type="checkbox"
-      value={value}
+      checked={value}
     />
   )
 }

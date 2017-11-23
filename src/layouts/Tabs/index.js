@@ -9,6 +9,7 @@ import Tabs from "../../components/Tabs"
 import {
   DEFAULT_EDIT_TAB_TEXT,
   DEFAULT_PREVIEW_TAB_TEXT,
+  DEFAULT_TABS_WRAPPER_STYLES,
 } from "../../constants.js"
 
 const LayoutTabs = ({
@@ -20,23 +21,25 @@ const LayoutTabs = ({
 }) => {
   return (
     <div>
-      <Tabs color={tabsColor}>
-        <Tab label={DEFAULT_PREVIEW_TAB_TEXT}>
-          <Preview
-            displayName={displayName}
-            hiddenProps={hiddenProps}
-            enhancedComponent={enhancedComponent}
-          />
-        </Tab>
-        <Tab label={DEFAULT_EDIT_TAB_TEXT}>
-          <Edit
-            displayName={displayName}
-            hiddenProps={hiddenProps}
-            enhancedComponent={enhancedComponent}
-            onChange={onChange}
-          />
-        </Tab>
-      </Tabs>
+      <div style={DEFAULT_TABS_WRAPPER_STYLES}>
+        <Tabs color={tabsColor}>
+          <Tab label={DEFAULT_PREVIEW_TAB_TEXT}>
+            <Preview
+              displayName={displayName}
+              hiddenProps={hiddenProps}
+              enhancedComponent={enhancedComponent}
+            />
+          </Tab>
+          <Tab label={DEFAULT_EDIT_TAB_TEXT}>
+            <Edit
+              displayName={displayName}
+              hiddenProps={hiddenProps}
+              enhancedComponent={enhancedComponent}
+              onChange={onChange}
+            />
+          </Tab>
+        </Tabs>
+      </div>
       {enhancedComponent}
     </div>
   )

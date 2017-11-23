@@ -1,6 +1,6 @@
 {
   "name": "react-interactive-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create interactive live demo for your React Component with ease",
   "author": {
     "name": "Cédric Delpoux",
@@ -15,10 +15,20 @@
     "type": "git",
     "url": "git+https://github.com/xuopled/react-interactive-component.git"
   },
-  "keywords": ["react", "component", "demo", "interactive", "live"],
+  "keywords": [
+    "react",
+    "component",
+    "demo",
+    "interactive",
+    "live"
+  ],
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["es", "lib", "umd"],
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
   "scripts": {
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
@@ -37,14 +47,14 @@
     "react-element-to-jsx-string": "^11.0.0"
   },
   "peerDependencies": {
-    "react": "^15.6.0",
-    "react-dom": "^15.6.0"
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0|| ^16.0.0 "
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^2.9.1",
     "eslint": "^4.4.1",
@@ -62,9 +72,9 @@
     "markdown-loader": "^2.0.1",
     "nwb": "^0.18.0",
     "prettier": "^1.5.3",
-    "react": "^15.6.1",
+    "react": "^15.0.0",
     "react-demo-page": "^0.1.0",
-    "react-dom": "^15.6.1",
+    "react-dom": "^15.0.0",
     "react-svg-line-chart": "^1.0.6",
     "react-test-renderer": "^15.6.1"
   }

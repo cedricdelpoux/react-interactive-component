@@ -32,6 +32,10 @@ export const DEFAULT_PREVIEW_TAB_TEXT = "Preview"
 export const DEFAULT_EDIT_TAB_TEXT = "Edit"
 export const DEFAULT_TAB_COLOR = "#905"
 
+export const DEFAULT_TABS_WRAPPER_STYLES = {
+  marginBottom: "20px",
+}
+
 export const DEFAULT_TABS_STYLES = {
   borderBottom: `5px solid ${DEFAULT_TAB_COLOR}`,
   paddingLeft: "20px",
