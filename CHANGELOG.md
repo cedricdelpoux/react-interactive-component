@@ -1,3 +1,7 @@
+# 0.1.4 - 2018-01-08
+
+* Updated: Dependencies
+
 # 0.1.3 - 2017-11-23
 
 * Added: Prepublish script
