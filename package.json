@@ -1,8 +1,7 @@
 {
   "name": "react-interactive-component",
   "version": "0.1.4",
-  "description":
-    "Create interactive live demo for your React Component with ease",
+  "description": "Create interactive live demo for your React Component with ease",
   "author": {
     "name": "Cédric Delpoux",
     "email": "xuopled@gmail.com"
@@ -16,10 +15,20 @@
     "type": "git",
     "url": "git+https://github.com/xuopled/react-interactive-component.git"
   },
-  "keywords": ["react", "component", "demo", "interactive", "live"],
+  "keywords": [
+    "react",
+    "component",
+    "demo",
+    "interactive",
+    "live"
+  ],
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["es", "lib", "umd"],
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
   "scripts": {
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
@@ -27,16 +36,18 @@
     "gh-release": "github-release-from-changelog",
     "lint": "eslint src demo/src",
     "precommit": "lint-staged",
-    "prepublish": "yarn build",
+    "prepublish": "yarn run snyk-protect && yarn build",
     "start": "nwb serve-react-demo",
     "test": "jest --config jest.config.json --colors --no-cache",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "prism-themes": "^1.0.0",
     "prismjs": "^1.21.0",
     "prop-types": "^15.6.0",
-    "react-element-to-jsx-string": "^11.0.1"
+    "react-element-to-jsx-string": "^11.0.1",
+    "snyk": "^1.373.0"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
@@ -69,5 +80,6 @@
     "react-dom": "^15.0.0",
     "react-svg-line-chart": "^1.0.6",
     "react-test-renderer": "^15.6.1"
-  }
+  },
+  "snyk": true
 }
